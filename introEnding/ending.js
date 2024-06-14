@@ -6,6 +6,7 @@ function emptyPage() {
     }
 
     showScore()
+    restartButton()
 }
 
 function showScore() {
@@ -24,4 +25,16 @@ function showScore() {
     h1.textContent = "C'est fini !!!"
     p1.textContent = "Tu as fait "+score+" points en "+secondsCount+" secondes !"
     p2.textContent = "Je parie que tes copains feront pas mieux !"
+}
+
+function restartButton() {
+    const container = document.getElementById("main")
+    const btn = document.createElement("button")
+
+    container.appendChild(btn)
+    btn.id = "restartButton"
+    btn.textContent = "Je veux faire mieux !"
+    btn.addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
 }
