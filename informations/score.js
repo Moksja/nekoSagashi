@@ -20,6 +20,10 @@ function scoreUpdate() {
         firstDigitImg.src = numbersList[digits[0]].image;
         secondDigitImg.src = numbersList[digits[1]].image;
     }
+    if (score === catsToFind.length) {
+        stopTimerGetBonus()
+        emptyPage()
+    }
 }
 
 function verifyCat(event) {

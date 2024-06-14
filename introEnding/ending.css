@@ -1,0 +1,19 @@
+#finalScoreDiv {
+    background-color: #160c2f;
+    border-radius: 20px;
+    width: 30%;
+    padding: 50px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 0px 10px #0d091a;
+}
+
+#p1 {
+    font-size: medium;
+}
+
+#p2 {
+    font-size: small;
+}

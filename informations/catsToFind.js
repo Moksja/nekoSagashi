@@ -15,9 +15,8 @@ function defineCatsToFindEasy() {
         }
     }
 
-    console.log(catsToFind)
+    console.log(score)
 }
-
 
 function addCatsToFindImg() {
     let container = document.getElementById("catsToFind")
@@ -36,4 +35,12 @@ function preErase() {
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
+}
+
+function showInfos() {
+    let container = document.getElementById("informationsContainer")
+    let button = document.getElementById('launchGame')
+
+    container.style.display = "flex"
+    button.style.display = "none"
 }

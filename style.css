@@ -10,3 +10,30 @@ main {
     height: 100%;
 }
 
+#launchGame {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #160c2f;
+    width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 10px #0d091a;
+    z-index: 2;
+
+    margin-top: 15%;
+    margin-left: 30%;
+
+    animation: pulse2 2s infinite alternate;
+    transition: background-color 0.3s ease;
+  }
+
+  #launchGame:hover {
+    background-color: #f97068;
+  }

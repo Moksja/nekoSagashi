@@ -7,12 +7,18 @@
     <link href="style.css" rel="stylesheet" />
     <link href="grids/catsGridStyle.css" rel="stylesheet" />
     <script src="grids/gridMaker.js" defer></script>
+
     <link href="informations/informations.css" rel="stylesheet" />
     <script src="informations/catsToFind.js" defer></script>
     <script src="informations/score.js" defer></script>
     <script src="informations/timer.js" defer></script>
+    
     <script src="clickOnCat/clickonCat.js" defer></script>
-    <script src="sounds.js" defer></script>
+
+    <script src="introEnding/ending.js" defer></script>
+    <link href="introEnding/ending.css" rel="stylesheet" />
+
+    <script src="sounds/sounds.js" defer></script>
     <script src="init.js" defer></script>
     <script src="data/data.js"></script>
 </head>
@@ -22,11 +28,11 @@
     <!-- sera supprimé pour un lancement automatique -->
     <button id="launchGame" onclick="init()">GO</button> 
 
-    <main>
+    <main id="main">
         <!-- les chats existants  -->
         <div class="catsGridContainer"></div>
         <!-- le score + les chats à retrouver + le timer  -->
-        <div class="informationsContainer">
+        <div id="informationsContainer">
             <div id="score">
                 <img src="images/texts/score.png" alt="score" id="scoreImg">
                 <div id="minus">

@@ -2,6 +2,7 @@
 
 let container = document.getElementById("timer")
 let img = document.createElement("img")
+let secondsCount 
 
 function timer() {
     container.appendChild(img)
@@ -10,12 +11,20 @@ function timer() {
 }
 
 function startTimer() {
-    let index = 0; 
+    secondsCount = 0; 
     interval = setInterval(function() {
-        img.src = chronoImages[index];
-        index++;
-        if (index >= chronoImages.length) {
+        img.src = chronoImages[secondsCount];
+        secondsCount++;
+        if (secondsCount >= chronoImages.length) {
             clearInterval(interval); 
+            stopTimerGetBonus()
+            emptyPage()
         }
     }, 1500); 
+}
+
+function stopTimerGetBonus() {
+    clearInterval(interval);
+    remainingSeconds = 12 - secondsCount;
+    score += remainingSeconds
 }
