@@ -35,7 +35,6 @@ function createCatsGrid() {
 function gridEraser() {
     let catsGrid = document.getElementsByClassName("catsGridContainer")[0];
     catTracker = [];
-    catsToFind = [];
 
     while (catsGrid.firstChild) {
         catsGrid.removeChild(catsGrid.firstChild);
