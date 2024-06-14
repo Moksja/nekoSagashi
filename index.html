@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="utf-8" name="viewport" content="width=device-width">
+     <title>Neko Sagashi2</title>
+    <link href="catsGridStyle.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="informations.css" rel="stylesheet" />
+    <script src="gridMaker.js" defer></script>
+    <script src="catsToFind.js" defer></script>
+    <script src="score.js" defer></script>
+    <script src="timer.js" defer></script>
+    <script src="init.js" defer></script>
+    <script src="data/data.js"></script>
+</head>
+
+
+<body>
+    <!-- sera supprimé pour un lancement automatique -->
+    <button id="launchGame">GO</button> 
+
+    <main>
+        <!-- les chats existants  -->
+        <div class="catsGridContainer"></div>
+        <!-- le score + les chats à retrouver + le timer  -->
+        <div class="informationsContainer">
+            <div id="score">
+                <img src="images/texts/score.png" alt="score" id="scoreImg">
+                <img src="images/numbers/0.png" alt="digit1" class="scoreDigit">
+                <img src="images/numbers/0.png" alt="digit2" class="scoreDigit">
+            </div>
+            <div id="catsToFind"></div>
+            <div id="timer"></div>
+        </div>
+
+    </main>
+
+</body>
+</html>

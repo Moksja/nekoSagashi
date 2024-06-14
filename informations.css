@@ -1,0 +1,45 @@
+.informationsContainer {
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    height: 20%;
+    justify-content: center;
+}
+
+/* SCORE */
+#score {
+    width: 30%;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3%;
+}
+#scoreImg {
+    height: 60%;
+    margin-right: 2.5%;
+}
+#score img {
+    height: 60%;
+}
+
+/* CATS TO FIND */
+#catsToFind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#catsToFind img {
+    transform: scale(0.8);
+}
+
+/* TIMER */
+#timer {
+    height: 100%;
+    margin-left: 10%;
+    background-color: #f96f68;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #25253d;
+}
+#timer img{
+    height: 100%;
+}
