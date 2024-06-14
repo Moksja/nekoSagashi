@@ -1,3 +1,5 @@
+// Il manque toute la partie affichage score etc à la fin du chrono
+
 let container = document.getElementById("timer")
 let img = document.createElement("img")
 

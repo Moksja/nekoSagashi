@@ -5,7 +5,7 @@ button.addEventListener('click', init)
 function init() {
     gridEraser()
     createCatsGrid()
-    defineCatsToFind()
+    defineCatsToFindEasy()
     addCatsToFindImg()
     timer()
 }
