@@ -1,6 +1,7 @@
 let catsToFind = []
 let availableCatstoFind = []
 
+
 function defineCatsToFindEasy() {
     preErase()
     availableCatstoFind = []
@@ -17,6 +18,24 @@ function defineCatsToFindEasy() {
 
     console.log(score)
 }
+
+function defineCatsToFindNormal() {
+    preErase()
+    availableCatstoFind = []
+    availableCatstoFind = [...catTracker];
+
+    for (let i = 0; i < 5; i++) {
+        let randomIndex = Math.floor(Math.random() * availableCatstoFind.length);
+        let selectedCat = availableCatstoFind[randomIndex];
+
+        if (!catsToFind.some(cat => cat.id === selectedCat.id)) {
+            catsToFind.push(selectedCat);
+        }
+    }
+
+    console.log(score)
+}
+
 
 function addCatsToFindImg() {
     let container = document.getElementById("catsToFind")

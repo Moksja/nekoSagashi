@@ -4,7 +4,7 @@ function emptyPage() {
     while (container.firstChild) {
         container.removeChild(container.firstChild)
     }
-
+    difficultyMode = 'none'
     showScore()
     restartButton()
 }

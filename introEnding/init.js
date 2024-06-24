@@ -1,8 +1,10 @@
-function init() {
+
+function initEasy() {
     gridEraser()
     createCatsGrid()
     
-    defineCatsToFindEasy()
+    defineCatsToFindEasy();
+                
     showInfos()
     
     addCatsToFindImg()
@@ -10,6 +12,15 @@ function init() {
     timer()
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     init()
-// });
+function initNormal() {
+    gridEraser()
+    createCatsGrid()
+    
+    defineCatsToFindNormal();
+                
+    showInfos()
+    
+    addCatsToFindImg()
+    popSound()
+    timer()
+}

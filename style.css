@@ -12,7 +12,7 @@ main {
 #menu {
     display: block;
 }
-#easyBtn {
+#easyBtn, #normalBtn {
     display: block;
     cursor: pointer;
     outline: none;
@@ -34,10 +34,10 @@ main {
     animation: pulse2 2s infinite alternate;
     transition: background-color 0.3s ease;
   }
-  #easyBtn:hover {
+  #easyBtn:hover, #normalBtn:hover {
     background-color: #f97068;
   }
-  #normalBtn, #hardCoreBtn {
+  #hardCoreBtn {
     display: block;
     cursor: pointer;
     outline: none;

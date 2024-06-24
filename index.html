@@ -16,13 +16,18 @@
 
 <body>
     <div id="menu">
-        <button id="easyBtn" onclick="init()">Easy</button> 
+        <button id="easyBtn" onclick="initEasy()">Easy</button> 
             <script>
                 document.getElementById('easyBtn').addEventListener('click', function() {
-                window.location.href = 'easy.html'; 
+                    window.location.href = 'easy.html'; 
             }); </script>
 
-        <button id="normalBtn">Normal</button>
+        <button id="normalBtn" onclick="initNormal()">Normal</button>
+            <script>
+                document.getElementById('normalBtn').addEventListener('click', function() {
+                    window.location.href = 'normal.html'; 
+            }); </script>
+
         <button id="hardCoreBtn">Hard</button>
     </div>
 
