@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="utf-8" name="viewport" content="width=device-width">
+     <title>Easy</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="grids/catsGridStyle.css" rel="stylesheet" />
+    <script src="grids/gridMaker.js" defer></script>
+
+    <link href="informations/informations.css" rel="stylesheet" />
+    <script src="informations/catsToFind.js" defer></script>
+    <script src="data/data.js"></script>
+</head>
+
+
+<body>
+    <div id="menu">
+        <button id="easyBtn" onclick="initEasy()">Easy</button> 
+            <script>
+                document.getElementById('easyBtn').addEventListener('click', function() {
+                    window.location.href = 'easy.html'; 
+            }); </script>
+
+        <button id="normalBtn" onclick="initNormal()">Normal</button>
+            <script>
+                document.getElementById('normalBtn').addEventListener('click', function() {
+                    window.location.href = 'normal.html'; 
+            }); </script>
+
+        <button id="hardCoreBtn">Hard</button>
+    </div>
+
+</body>
+</html>
