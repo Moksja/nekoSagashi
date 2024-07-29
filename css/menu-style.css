@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "cat-font";
+    src: url('../fonts/LittlePaws.ttf') format('truetype');
+}
+
+body {
+    overflow: hidden;
+    background-image: url('../images/background.png');
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titre */
+.title {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1 {
+    font-family: 'cat-font';
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: #f97068;
+    text-shadow: -1px -1px 0 white, 3px -1px 0 white, -1px 3px 0 white, 2px 2px 0 white;
+}
+
+/* animation titre  */
+.wavy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-weight: 600;
+}
+.wavy span {
+    animation: animate 3s ease-in-out infinite;
+    animation-delay: calc(0.05s * var(--i));
+}
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-20px);
+        }
+    40%, 70% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.menu {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+  
+    font-family: 'cat-font';
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: white;
+
+    background-color: #160c2f;
+    border: 2.5px solid white;
+    box-shadow: 0px 0px 10px #0d091a;
+
+    animation: pulse2 2s infinite alternate;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #f97068;
+}
+
+
+/* Animation boutons */
+@keyframes pulse2 {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
+

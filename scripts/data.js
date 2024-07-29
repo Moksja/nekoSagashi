@@ -48,31 +48,8 @@ let catsList = [
     new Cat("images/cats/c40.png", "cat39")
 ];
 
-
-
-//NUMBERS
-//ajouter dans images un signe "-" à utiliser si besoin
-class Number {
-    constructor(image, id) {
-        this.image = image;
-        this.id = id;
-    }
-}
-let numbersList = [
-    new Number("images/numbers/0.png", 0),
-    new Number("images/numbers/1.png", 1),
-    new Number("images/numbers/2.png", 2),
-    new Number("images/numbers/3.png", 3),
-    new Number("images/numbers/4.png", 4),
-    new Number("images/numbers/5.png", 5),
-    new Number("images/numbers/6.png", 6),
-    new Number("images/numbers/7.png", 7),
-    new Number("images/numbers/8.png", 8),
-    new Number("images/numbers/9.png", 9)
-]
-
 let chronoImages = [
-    "images/chrono/ch00.png", 
+    "images/chrono/ch00.png",
     "images/chrono/ch01.png",
     "images/chrono/ch02.png",
     "images/chrono/ch03.png",

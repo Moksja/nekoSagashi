@@ -1,55 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-     <meta charset="utf-8" name="viewport" content="width=device-width">
-     <title>Easy</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="grids/catsGridStyle.css" rel="stylesheet" />
-    <script src="grids/gridMaker.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS - Easy</title>
 
-    <link href="informations/informations.css" rel="stylesheet" />
-    <script src="informations/catsToFind.js" defer></script>
-    <script src="informations/score.js" defer></script>
-    <script src="informations/timer.js" defer></script>
-    
-    <script src="clickOnCat/clickonCat.js" defer></script>
+    <link rel="stylesheet" href="css/game-page.css">
+    <link rel="stylesheet" href="css/cats-grid-style.css">
+    <link rel="stylesheet" href="css/intro-animation.css">
+    <link rel="stylesheet" href="css/ending.css">
 
-    <script src="introEnding/ending.js" defer></script>
-    <script src="introEnding/init.js" defer></script>
-    <link href="introEnding/ending.css" rel="stylesheet" />
+    <!-- Animation de départ -->
+    <script src="scripts/animation.js" defer></script>
+    <!-- Mise en place de la grille de chats -->
+    <script src="scripts/catsGridMaker.js" defer></script>
+    <!-- Mise en place des infos (score, chats à trouver, timer) -->
+    <script src="scripts/catsToFind.js" defer></script>
+    <script src="scripts/score.js" defer></script>
+    <script src="scripts/timer.js" defer></script>
 
-    <script src="sounds/sounds.js" defer></script>
-    <script src="data/data.js"></script>
+    <!-- Fin jeu -->
+     <script src="scripts/ending.js"></script>
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/sounds.js" defer></script>
+
+    <!-- Icons script -->
+    <script src="https://kit.fontawesome.com/6e0742cd0f.js" crossorigin="anonymous"></script>
 </head>
 
+<body id="main">
+    <!-- Panneau d'instructions à cliquer -->
+     <div class="instructions">
+        <h1>Retrouve les chatons du bas parmi la foule de chatons !</h1>
+        <h1>Attention, tu n'as pas beaucoup de temps !</h1>
+        <button class='play-button'onclick="">
+            <i class="fa-solid fa-play"></i>
+        </button>
+     </div>
 
-<body>
-    <!-- sera supprimé pour un lancement automatique -->
-    <button id="launchGame" onclick="initEasy()">GO</button> 
+     <!-- Rideaux animés avant lancement du jeu -->
+    <div class="curtains-container">
+        <audio id="curtainsSound" src="sounds/curtains.mp3"></audio>
+        <img src="images/decor/leftCurtain.png" alt="left curtain" class="left-curtain">
+        <img src="images/decor/rightCurtain.png" alt="right curtain" class="right-curtain">
+    </div>
 
-    <main id="main">
-        <!-- les chats existants  -->
-        <div class="catsGridContainer"></div>
+
+    <main>
+
+        <!-- grille de chats à observer  -->
+        <div class="cats-grid-container"></div>
+
         <!-- le score + les chats à retrouver + le timer  -->
-        <div id="informationsContainer">
-            <div id="score">
-                <img src="images/texts/score.png" alt="score" id="scoreImg">
-                <div id="minus">
-                    <img src="images/numbers/minus.png" alt="minus" class="minus">
-                </div>
-                <div id="firstDigit">
-                    <img src="images/numbers/0.png" alt="digit1" class="digit">
-                </div>
-                <div id="secondDigit">
-                    <img src="images/numbers/0.png" alt="digit2" class="digit">
-                </div>
+        <div class="informations-container">
+            <div class="score">
+                <h2>Score :</h2>
+                <h2 class="score-value">0</h2>
             </div>
-            <div id="catsToFind"></div>
-            <div id="timer"></div>
+            <div class="cats-to-find"></div>
+            <div class="timer"></div>
         </div>
 
     </main>
 
 </body>
 </html>
+

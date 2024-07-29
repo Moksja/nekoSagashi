@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "cat-font";
+    src: url('../fonts/LittlePaws.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Panneaux instructions + bouton play */
+.instructions {
+    position: absolute;
+    z-index: 4;
+    margin: 15% 25%;
+    padding: 1.5%;
+    width: 40%;
+    max-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #160c2f;
+    border: 2.5px solid white;
+    box-shadow: 0px 0px 10px #0d091a;
+    border-radius: 20px;
+
+    animation: hide-instructions 5s ease-in-out forwards;
+}
+.instructions h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    color: white;
+
+    text-align: center;
+    padding: 2.5%;
+    
+}
+.instructions .hide {
+    display: none;
+}
+
+.play-button {
+    background-color: gray;
+    border-radius: 50%;
+
+    width: 55px;
+    height: 50px;
+
+    box-shadow: 0px 0px 10px #0d091a;
+    border: 2px solid white;
+}
+
+.play-button i {
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translateX(3px);
+
+    color: white;
+}
+.play-button:hover {
+    background-color: #0d091a;
+}
+.play-button.clicked {
+    background-color: #f97068;
+    transform: translateY(2.5px);
+}
+
+/* Div rideaux et animation des rideaux */
+.curtains-container {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 3;
+    margin-top: 0px;
+    margin-left: 0px;
+
+    display: flex;
+}
+
+.curtains-container img {
+    width: 50%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.left-curtain.opened {
+    animation: left-curtain 3s ease-in-out forwards;
+}
+
+.right-curtain.opened {
+    animation: right-curtain 3s ease-in-out forwards;
+}
+
+@keyframes left-curtain {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(0); 
+    }
+    99% {
+        transform: translateX(-120%); 
+    }
+    100% {
+        visibility: hidden;
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes right-curtain {
+    0% {
+        transform: translateX(0); 
+    }
+    50% {
+        transform: translateX(0); 
+    }
+    99% {
+        transform: translateX(120%); 
+    }
+    100% {
+        visibility: hidden;
+        transform: translateX(120%); 
+    }
+}

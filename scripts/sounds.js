@@ -1,4 +1,11 @@
-//hover sounds
+//fonction qui inclut tous les sons 
+function gameSounds() {
+    popSound();
+    errorSound();
+    correctSound();
+}
+
+// hover sounds 
 function popSound() {
     let randomPop = popList[Math.floor(Math.random() * popList.length)]
     let pop = new Audio(randomPop)

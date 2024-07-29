@@ -6,8 +6,10 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: auto;
     margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
     box-shadow: 0px 0px 10px #0d091a;
 }
 
@@ -35,13 +37,14 @@
     background-size: 100% 100%;
     box-shadow: 0px 0px 10px #0d091a;
     z-index: 2;
-    margin-top: 5%;
+
     margin-left: auto;
     margin-right: auto;
 
     animation: pulse2 2s infinite alternate;
     transition: background-color 0.3s ease;
   }
+  
   #restartButton:hover {
     background-color: #f97068;
   }

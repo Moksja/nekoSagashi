@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "cat-font";
+    src: url('../fonts/LittlePaws.ttf') format('truetype');
+}
+
+body {
+    overflow: hidden;
+    background-image: url('../images/background.png');
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.informations-container {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cats-to-find {
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cats-to-find img {
+    height: 100%;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+}
+
+.timer {
+    height: 60%;
+    width: 10%;
+    margin-left: 5%;
+    background-color: #f96f68;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #25253d; 
+    display: flex;
+    justify-content: center;
+}
+.timer img {
+    height: 100%;
+    animation: pulse2 2s infinite alternate;
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
+
+
+h2 {
+    font-family: 'cat-font';
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    color: #f97068;
+    text-shadow: -1px -1px 0 white, 3px -1px 0 white, -1px 3px 0 white, 2px 2px 0 white;
+
+    margin-left: 50px;
+}
+
+button {
+    width: 100px;
+}
+

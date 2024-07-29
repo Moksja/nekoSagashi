@@ -1,4 +1,5 @@
-.catsGridContainer {
+.cats-grid-container {
+    margin-top: 2.5%;
     margin-left: 5%;
     width: 90%;
     min-width: 500px;
@@ -6,6 +7,10 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px 30px;
+}
+.cats-grid-container img {
+    height: 100%;
+    animation: pulse 2s infinite alternate;
 }
 
 .cell {
@@ -16,10 +21,7 @@
     align-items: center;
 }
 
-.catsGridContainer img {
-    height: 100%;
-    animation: pulse 2s infinite alternate;
-}
+
 
 @keyframes pulse {
     0% {
